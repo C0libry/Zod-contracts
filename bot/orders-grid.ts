@@ -7,8 +7,8 @@ export const SetOrdersGridRequestSchema = z.object({
   deltaPrice: z.number().min(0),
   closePosition: z.boolean().default(false),
   orderQuantity: z.number().int().min(1).max(100),
-  startPrice: z.number().optional(),
-  quantityMultiplier: z.number().optional(),
+  startPrice: z.number().min(0).optional(),
+  quantityMultiplier: z.number().min(0.5).max(3).optional(),
 });
 
 export type SetOrdersGridRequest = z.infer<typeof SetOrdersGridRequestSchema>;
