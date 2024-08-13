@@ -11,8 +11,4 @@ export const SetOrdersGridRequestSchema = z.object({
   quantityMultiplier: z.number().optional(),
 });
 
-// export const SetOrdersGridResponseSchema = z.object({
-// });
-
 export type SetOrdersGridRequest = z.infer<typeof SetOrdersGridRequestSchema>;
-// export type SetOrdersGridResponse = z.infer<typeof SetOrdersGridResponseSchema>;
