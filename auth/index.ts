@@ -5,5 +5,6 @@ export * from './login-access-token';
 export * from './login';
 export * from './register';
 export * from './reset-password';
+export * from './send-reset-password-token';
 export * from './user-profile';
 export * from './update-user';
