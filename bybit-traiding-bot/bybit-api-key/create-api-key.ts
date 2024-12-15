@@ -6,4 +6,13 @@ export const CreateApiKeyRequestSchema = z.object({
   apiSecret: z.string().min(1, 'Required'),
 });
 
+export const CreateApiKeyWithUserIdRequestSchema =
+  CreateApiKeyRequestSchema.extend({
+    userId: z.string().uuid(),
+  });
+
 export type CreateApiKeyRequest = z.infer<typeof CreateApiKeyRequestSchema>;
+
+export type CreateApiKeyWithUserIdRequest = z.infer<
+  typeof CreateApiKeyWithUserIdRequestSchema
+>;
