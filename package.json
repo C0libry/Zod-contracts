@@ -1,0 +1,22 @@
+{
+  "name": "my-zod-contracts",
+  "version": "1.0.0",
+  "description": "Shared DTO contracts",
+  "main": "index.js",
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C0libry/Zod-contracts.git"
+  },
+  "author": "C0libry",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/C0libry/Zod-contracts/issues"
+  },
+  "homepage": "https://github.com/C0libry/Zod-contracts#readme"
+}
