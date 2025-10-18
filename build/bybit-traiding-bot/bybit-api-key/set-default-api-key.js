@@ -1,9 +1,10 @@
 "use strict";
-// import { z } from 'zod';
-// export const SetDefaultApiKeyRequestSchema = z.object({
-//   userId: z.string().uuid().optional(),
-//   apiKeyName: z.string().min(1, 'Required'),
-// });
-// export type SetDefaultApiKeyRequest = z.infer<
-//   typeof SetDefaultApiKeyRequestSchema
-// >;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SetDefaultApiKeyWithUserIdRequestSchema = exports.SetDefaultApiKeyRequestSchema = void 0;
+const zod_1 = require("zod");
+exports.SetDefaultApiKeyRequestSchema = zod_1.z.object({
+    apiKeyId: zod_1.z.string().uuid(),
+});
+exports.SetDefaultApiKeyWithUserIdRequestSchema = exports.SetDefaultApiKeyRequestSchema.extend({
+    id: zod_1.z.string().uuid(),
+});

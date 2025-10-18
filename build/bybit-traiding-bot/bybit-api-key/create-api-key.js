@@ -6,6 +6,7 @@ exports.CreateApiKeyRequestSchema = zod_1.z.object({
     apiKeyName: zod_1.z.string().min(1, 'Required'),
     apiKey: zod_1.z.string().min(1, 'Required'),
     apiSecret: zod_1.z.string().min(1, 'Required'),
+    isDemoKey: zod_1.z.boolean().default(false),
 });
 exports.CreateApiKeyWithUserIdRequestSchema = exports.CreateApiKeyRequestSchema.extend({
     userId: zod_1.z.string().uuid(),
