@@ -5,6 +5,4 @@ export const LoginAccessTokenResponseSchema = z.object({
   user: UserProfileResponseSchema,
   accessToken: z.string().min(5),
 });
-export type LoginAccessTokenResponse = z.infer<
-  typeof LoginAccessTokenResponseSchema
->;
+export type LoginAccessTokenResponse = z.infer<typeof LoginAccessTokenResponseSchema>;

@@ -18,6 +18,4 @@ export const SetOrdersGridWithUserIdRequestSchema = z.object({
 
 export type SetOrdersGridRequest = z.infer<typeof SetOrdersGridRequestSchema>;
 
-export type SetOrdersGridWithUserIdRequest = z.infer<
-  typeof SetOrdersGridWithUserIdRequestSchema
->;
+export type SetOrdersGridWithUserIdRequest = z.infer<typeof SetOrdersGridWithUserIdRequestSchema>;

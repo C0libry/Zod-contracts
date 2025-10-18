@@ -20,6 +20,4 @@ export const ChangePasswordResponseSchema = z.object({
 });
 
 export type ChangePasswordRequest = z.infer<typeof ChangePasswordRequestSchema>;
-export type ChangePasswordResponse = z.infer<
-  typeof ChangePasswordResponseSchema
->;
+export type ChangePasswordResponse = z.infer<typeof ChangePasswordResponseSchema>;
