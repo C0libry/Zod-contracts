@@ -10,6 +10,7 @@ exports.SetOrdersGridRequestSchema = zod_1.z.object({
     closePosition: zod_1.z.boolean().default(false),
     orderQuantity: zod_1.z.number().int().min(1).max(100),
     startPrice: zod_1.z.number().min(0).optional(),
+    setTakeProfit: zod_1.z.boolean().default(false).optional(),
     quantityMultiplier: zod_1.z.number().min(0.5).max(3).optional(),
 });
 exports.SetOrdersGridWithUserIdRequestSchema = zod_1.z.object({

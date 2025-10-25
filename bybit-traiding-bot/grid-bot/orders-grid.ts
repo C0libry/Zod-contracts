@@ -8,6 +8,7 @@ export const SetOrdersGridRequestSchema = z.object({
   closePosition: z.boolean().default(false),
   orderQuantity: z.number().int().min(1).max(100),
   startPrice: z.number().min(0).optional(),
+  setTakeProfit: z.boolean().default(false).optional(),
   quantityMultiplier: z.number().min(0.5).max(3).optional(),
 });
 

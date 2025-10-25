@@ -1,6 +1,6 @@
 {
   "name": "my-zod-contracts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": " Shared DTO contracts",
   "main": "build/index.js",
   "dependencies": {
