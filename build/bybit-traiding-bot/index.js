@@ -17,6 +17,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./bybit-api-key/create-api-key"), exports);
 __exportStar(require("./bybit-api-key/remove-api-key"), exports);
 __exportStar(require("./bybit-api-key/update-api-key"), exports);
-__exportStar(require("./grid-bot/orders-grid"), exports);
+__exportStar(require("./trading-bot/orders-grid"), exports);
 __exportStar(require("./user/create-user"), exports);
 __exportStar(require("./bybit-api-key/set-default-api-key"), exports);
