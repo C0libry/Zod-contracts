@@ -1,14 +1,15 @@
 import { z } from 'zod';
 
 export const CreateAutoBalanceBotRequestSchema = z.object({
-  startBalance: z.number().min(0),
-  rebalanceTarget: z.number().min(0),
+  startBalance: z.number().min(0), // example: 100$
+  rebalanceTarget: z.number().min(0), // example: 3%
+  //   outOfPosition
   assets: z
     .array(
       z.object({
         symbol: z.string().min(1, 'Required'),
         side: z.enum(['Buy', 'Sell']),
-        targetWeight: z.number().min(0),
+        targetWeight: z.number().min(0), // example: 10%
       }),
     )
     .min(1),

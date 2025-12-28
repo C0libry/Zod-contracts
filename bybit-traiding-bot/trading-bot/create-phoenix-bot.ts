@@ -8,6 +8,7 @@ export const CreatePhoenixBotRequestSchema = z.object({
   closePosition: z.boolean().default(false),
   startPrice: z.number().min(0).optional(),
   ratio: z.number().min(1).default(2),
+  //   quantityMultiplier: z.number().min(0.5).max(3).optional(),
 });
 
 export type CreatePhoenixBotRequest = z.infer<typeof CreatePhoenixBotRequestSchema>;
