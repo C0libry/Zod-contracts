@@ -1,13 +1,13 @@
 {
   "name": "my-zod-contracts",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": " Shared DTO contracts",
   "main": "build/index.js",
   "dependencies": {
     "zod": "^3.24.1"
   },
   "scripts": {
-    "prepublish": "rm -rf build && tsc",
+    "prepare": "rm -rf build && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"./**/*.ts\""
   },
